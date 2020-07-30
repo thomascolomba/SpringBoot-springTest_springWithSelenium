@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>myTitle</title>
+<style>
+div {text-align:center;left-margin:auto;right-margin:auto;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myButton").click(function(){
+	$.get("showMessage", function(data, status){
+	  $("#myTextContainer").text(data);
+    });
+  });
+});
+</script>
+</head>
+<body>
+	<div><button type="button" id="myButton">Click me to show message</button></div>
+	<div><span id="myTextContainer">default text</span></div>
+</body>
+</html>
