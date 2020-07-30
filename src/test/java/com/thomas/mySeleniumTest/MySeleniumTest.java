@@ -45,6 +45,7 @@ public class MySeleniumTest extends FluentTest {
 	  //arrange
 	  goTo(getUrl());
 	  //act
+	  await().atMost(1, TimeUnit.SECONDS);
 	  find("#myButton").click();
 	  await().atMost(3, TimeUnit.SECONDS);
 	  //assert

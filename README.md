@@ -1,9 +1,11 @@
 Run integration tests with Selenium (from front-end in html/js/css to java controller).<br/>
+The application is a very simple single-page.<br/>
+The application shows a default message. When the user clicks the button, a new message is loaded from the java back-end and displayed.<br/>
 <br/>
 compile & execute :<br/>
 mvn spring-boot:run<br/>
 
-during the execution, at the url : http://localhost:8080/<br/>
+during the execution, browse : http://localhost:8080/<br/>
 <br/>
 Note : You need to install phantomjs to run the tests.<br/>
 <br/>
